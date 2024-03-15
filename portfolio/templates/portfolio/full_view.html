@@ -1,0 +1,15 @@
+{% extends "portfolio/base.html" %}
+
+{% load static %}
+{% block full_view_content %}
+<div class="main-content container">
+    <h2>{{ project.title }} </h2>
+</div>
+
+<div class="lead">
+    <p>{{ project.description }}</p>
+    <div>
+        <a href="{{ project.link }}" class="btn btn-primary" target="_blank">Check it out</a>
+    </div>
+</div>
+{% endblock %}

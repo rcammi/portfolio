@@ -1,0 +1,19 @@
+{% extends "portfolio/base.html" %}
+
+{% load static %}
+{% block content %}
+<div class="container">
+    {% for blog in blogs %}
+    <div class="row mb-3">
+        <div class="col-md-12">
+            <div class="custom-card">
+                <div class="card-body">
+                    <a href="{{ blog.link }}" class="card-title lead" target="_blank">{{ blog.title }}</a>
+                    <p class="card-text">{{ blog.short_description }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "portfolio/base.html" %}
+
+{% load static %}
+{% block content %}
+<div class="container">
+    <h1 class="cover-heading mb-3">Projects</h1>
+    {% for project in projects %}
+    <div class="row mb-3">
+        <div class="col-md-12">
+            <div class="custom-card">
+                <!-- <img class="card-img-top" src="{{ project.image }}"> -->
+                <div class="card-body">
+                    <a href="{% url 'portfolio-full_view' project.pk %}" class="card-title lead">
+                        {{ project.title }}
+                    </a>
+                    <p class="card-text">{{ project.short_description }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "portfolio/base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col text-center">
+            <img src="{% static 'portfolio/images/photo_mosaic.jpeg' %}" class="small-circle-img mb-4">
+            <h1 class="cover-heading mb-3">Renzo Cammi</h1>
+            <h4 class="lead mb-4">GIS Developer | Data Engineering | Data Analytics</h4>
+            <p class="lead mb-5">
+                Make better decisions with the power of location and arrive at data-driven solutions that bring business
+                success.
+            </p>
+            <h4 class="cover-heading mb-3">About me</h4>
+            <p class="lead">
+                My name is Renzo Cammi, I'm an engineering surveyor based in Buenos Aires, Argentina. My skill set
+                spans a wide range of tools and technologies, including Python, R, and SQL scripting for data analysis
+                and manipulation, alongside proficiency in building ETLs from scratch. Additionally, I excel in creating
+                dynamic reporting and visualization solutions, leveraging platforms like Power BI, Looker, and Metabase.
+                I am adept at utilizing Django framework for web development, as well as employing Docker and Airflow
+                for efficient workflow automation.
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}
