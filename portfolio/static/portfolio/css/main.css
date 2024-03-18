@@ -3,15 +3,13 @@
  */
 html,
 body {
-    height: 0%;
+    height: 100%; /* Set height to 100% */
     margin: 0;
 }
 
 body {
-    background-color: #333;
-    color: #fff;
-    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+    background-color: #fff; /* Set background color to white */
+    color: #000; /* Set text color to black */
 }
 
 /* Target all text elements and reduce their font size */
@@ -54,14 +52,14 @@ body {
 .nav-masthead .nav-link {
     padding: .25rem 0;
     font-weight: 700;
-    color: rgba(255, 255, 255, .5);
+    color: rgba(0, 0, 0, .5); /* Set link color to dark grey */
     background-color: transparent;
     border-bottom: .25rem solid transparent;
 }
 
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
-    border-bottom-color: rgba(255, 255, 255, .25);
+    border-bottom-color: rgba(0, 0, 0, .25); /* Set link hover color */
 }
 
 /* Apply Bootstrap styles to active navigation link */
@@ -75,8 +73,8 @@ body {
 }
 
 .nav-masthead .active {
-    color: #fff;
-    border-bottom-color: #fff;
+    color: #000; /* Set active link color to black */
+    border-bottom-color: #000; /* Set active link underline color to black */
 }
 
 @media (min-width: 48em) {
@@ -113,11 +111,11 @@ body {
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
-    color: #333;
+    color: #fff; /* Set button text color to white */
     text-shadow: none;
     /* Prevent inheritance from `body` */
-    background-color: #fff;
-    border: .05rem solid #fff;
+    background-color: #000; /* Set button background color to black */
+    border: .05rem solid #000; /* Set button border color to black */
 }
 
 /*
@@ -136,7 +134,7 @@ body {
    * Footer
    */
 .mastfoot {
-    color: rgba(255, 255, 255, .5);
+    color: rgba(0, 0, 0, .5); /* Set footer text color to dark grey */
 }
 
 .footer-links {
@@ -190,3 +188,28 @@ table {
     border-radius: 10px;
     /* Set border radius */
 }
+
+/*
+* contact
+*/
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; /* Adjust this based on your preference */
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 20px;
+}
+
+td {
+    padding: 10px;
+}
+
+svg {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
